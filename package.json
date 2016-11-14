@@ -1,0 +1,35 @@
+{
+  "name": "ageno-default-wordpress-theme",
+  "version": "1.0.0",
+  "description": "Simple WordPress Theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxbmx/ageno-default-wordpress-theme.git"
+  },
+  "author": "Maksymilian Sleziak, Ageno.pl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxbmx/ageno-default-wordpress-theme/issues"
+  },
+  "homepage": "https://github.com/maxbmx/ageno-default-wordpress-theme#readme",
+  "devDependencies": {
+    "bootstrap": "^4.0.0-alpha.5",
+    "bower": "^1.8.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.0",
+    "gulp-jsvalidate": "^2.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify": "0.0.14",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sequence": "^0.4.6",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-uglify": "^2.0.0"
+  }
+}

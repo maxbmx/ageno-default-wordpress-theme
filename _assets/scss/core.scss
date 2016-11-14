@@ -1,0 +1,33 @@
+body {
+  background: #f4f4f4;
+}
+
+#content img { max-width: 300px!important; } //test
+
+.admin-bar {
+
+  html,
+  .navbar-fixed-top {
+    margin-top: 32px;
+  }
+
+  * html body,
+  .navbar-fixed-top {
+    margin-top: 32px;
+  }
+
+  @media screen and ( max-width: 782px ) {
+
+    html,
+    .navbar-fixed-top {
+      margin-top: 46px;
+    }
+
+    * html body,
+    .navbar-fixed-top {
+      margin-top: 46px;
+    }
+
+  }
+
+}
