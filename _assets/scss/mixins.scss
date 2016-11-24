@@ -1,0 +1,11 @@
+@mixin content-hover($content-hover-color: #b2fdde) {
+  a, a:active, a:hover, a:visited {
+    color: inherit;
+    text-decoration: none;
+    box-shadow: 0 -.4em 0 $content-hover-color inset;
+  }
+  a:active, a:hover {
+    color: inherit;
+    background-color: $content-hover-color;
+  }
+}

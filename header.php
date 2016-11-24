@@ -24,7 +24,7 @@
         'menu_class' => 'nav navbar-nav',
         'container'         => false,
         'menu' => 'top_menu',
-        'depth' => 2,
+        'depth' => 3,
         'container' => false,
         'menu_class' => 'nav navbar-nav',
 

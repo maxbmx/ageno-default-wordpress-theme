@@ -70,7 +70,8 @@ gulp.task('watch', ['css', 'js'], function () {
     livereload.listen();
     gulp.watch(cssFiles, ['css']);
     gulp.watch(jsFiles, ['js']);
-    gulp.watch(watchFiles, ['watchfiles']);
+    //gulp.watch(watchFiles, ['watchfiles', 'css']);
+    gulp.watch(watchFiles, ['css']);
 });
 
 //gulp.task('default', gulpSequence('clean-assets', ['js', 'css', 'img', 'fonts'], 'manifest', 'clean-manifest', 'compress'));

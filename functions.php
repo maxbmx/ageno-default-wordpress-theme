@@ -13,7 +13,4 @@ require_once locate_template('/functions/search-widget.php');
 require_once locate_template('/functions/index-pagination.php');
 require_once locate_template('/functions/split-post-pagination.php');
 require_once locate_template('/functions/feedback.php');
-
-
-
-add_image_size( 'carousel-bg', 120);
+require_once locate_template('/functions/images.php');

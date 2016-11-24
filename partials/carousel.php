@@ -13,10 +13,17 @@
   $carousel_indicator_post_no = 0;
   $carousel_post_no = 0;
 
+  if ( is_category('Home Slider') ) {
+    $category_name = 'Home Slider';
+  } else {
+    $category_name = null;
+  }
+?>
 
+<?php
   $wp_query_args = array(
-    'category_name' => 'Home Slider',
-    'posts_per_page' => 5
+    'category_name' => $category_name,
+    'posts_per_page' => 2
     );
   $the_query = new WP_Query( $wp_query_args );
 ?>
@@ -46,7 +53,7 @@
           <?php $carousel_post_no++ ;?>
         <?php
           if ( has_post_thumbnail() ) {
-            the_post_thumbnail();
+            the_post_thumbnail('carousel-bg');
           }
         ?>
 

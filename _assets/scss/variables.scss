@@ -3,10 +3,10 @@ $fa-font-path: "../build/fonts/";
 
 // ## bower_components/bootstrap
 
-$gray-dark:                 #373a3c !default;
-$gray:                      #55595c !default;
-$gray-light:                #818a91 !default;
-$gray-lighter:              #eceeef !default;
+$gray-dark:                 #888 !default;
+$gray:                      #aaa !default;
+$gray-light:                #ccc !default;
+$gray-lighter:              #eee !default;
 $gray-lightest:             #f7f7f9 !default;
 
 $brand-primary:             #0275d8 !default;
@@ -21,8 +21,8 @@ $brand-inverse:             $gray-dark !default;
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
-$enable-flex:               true !default; //set to true
-$enable-rounded:            true !default;
+$enable-flex:               false; //set to true
+$enable-rounded:            false;
 $enable-shadows:            false !default;
 $enable-gradients:          false !default;
 $enable-transitions:        false !default;
