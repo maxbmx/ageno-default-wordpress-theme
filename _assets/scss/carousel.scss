@@ -23,7 +23,7 @@
   left: 0;
   min-height: 90vh;
   object-fit: cover;
-  filter: contrast(80%) brightness(60%) saturate(90%);
+  //filter: contrast(80%) brightness(50%) saturate(50%); //performance issue
 
 }
 

@@ -1,16 +1,19 @@
 .posts {  //new
 
-  padding: $grid-gutter-width-base / 2;
+  //padding: $grid-gutter-width-base / 2;
+  padding: 0;
 
   div {
     //padding: 0; //remove gutter
-    margin: $grid-gutter-width-base / 2 0;
+    //margin: $grid-gutter-width-base / 2 0;
+    margin: 0;
+    padding: 0;
   }
 
   article {
     background: #333; //todo
     position: relative;
-    height: 200px;
+    height: 300px;
     overflow: hidden;
   }
 
@@ -61,7 +64,8 @@
     object-fit: cover;
     height: 100%;
     width: 100%;
-    filter: contrast(80%) brightness(80%) saturate(50%);
+    //filter: contrast(80%) brightness(50%) saturate(50%); //performance issue
+    //filter: brightness(50%);
     z-index: 1;
   }
 
