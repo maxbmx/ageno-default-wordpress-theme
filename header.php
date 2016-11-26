@@ -10,7 +10,7 @@
 
 <body <?php body_class(); ?>>
 
-<nav class="navbar navbar-fixed-top navbar-dark">
+<nav class="navbar navbar-full navbar-fixed-top navbar-dark navbar-ageno">
 
   <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
 
