@@ -1,7 +1,5 @@
 <?php
 
-function b4st_widgets_init() {
-
   /*
   Sidebar (one widget area)
    */
@@ -16,17 +14,29 @@ function b4st_widgets_init() {
   ) );
 
   /*
-  Footer (three widget areas)
+  Footer (footer widget areas)
    */
+
   register_sidebar( array(
-    'name'            => __( 'Footer', 'b4st' ),
-    'id'              => 'footer-widget-area',
-    'description'     => __( 'The footer widget area', 'b4st' ),
-    'before_widget'   => '<div class="%1$s %2$s col-sm-4">',
-    'after_widget'    => '</div>',
-    'before_title'    => '<h2>',
-    'after_title'     => '</h2>',
+    'name'          => __( 'Footer widget area', 'ageno-dwt' ),
+    'id'            => 'footer-widget-area',
+    'description'   => '',
+    'class'         => '',
+    'before_widget' => '<div class="widget %1$s %2$s col-sm-4">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2 class="widgettitle">',
+    'after_title'   => '</h2>'
   ) );
 
-}
-add_action( 'widgets_init', 'b4st_widgets_init' );
+
+  register_sidebar( array(
+    'name'          => __( 'Post Advert', 'ageno-dwt' ),
+    'id'            => 'post-advert',
+    'description'   => '',
+    'class'         => '',
+    'before_widget' => '<div class="widget %1$s %2$s col-sm-4">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2 class="widgettitle">',
+    'after_title'   => '</h2>'
+  ) );
+

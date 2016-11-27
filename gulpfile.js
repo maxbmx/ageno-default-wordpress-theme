@@ -32,8 +32,13 @@ var watchFiles = [
 
 gulp.task('css', function () {
   return gulp.src(cssFiles)
+    .pipe(plumber({
+      errorHandler: function (err) {
+        console.log(err);
+        this.emit('end');
+      }
+    }))
     .pipe(sourcemaps.init({largeFile: true}))
-    .pipe(plumber())
     .pipe(sass())
     .pipe(cleancss())
     .pipe(concat('style.min.css'))

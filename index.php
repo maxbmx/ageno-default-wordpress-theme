@@ -6,5 +6,4 @@
   <?php get_template_part('partials/content', get_post_format()); ?>
 </div>
 
-
 <?php get_footer(); ?>

@@ -1,4 +1,8 @@
-footer {
+.footer-widget-area {
+  padding: $grid-gutter-width-base * 4;
+}
+
+footer#footer {
   font-family: $font-family-monospace;
   color: $gray;
 
@@ -18,3 +22,6 @@ footer {
 
   }
 }
+
+
+

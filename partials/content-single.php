@@ -6,10 +6,12 @@
           <?php echo get_avatar( get_the_author_meta( 'ID' ), 128 ); ?> <?php the_author() ?>
         </div>
         <time datetime="<?php the_time('d-m-Y')?>">
-          <i class="fa fa-clock-o"></i> <?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . __(' ago'); ?>
+          <i class="fa fa-clock-o"></i> <?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) .' '. __('ago', 'ageno-default-wordpress-theme'); ?>
         </time>
       </section>
-      <?php the_content()?>
+      <div class="adt">
+        <?php the_content()?>
+      </div>
       <?php wp_link_pages(); ?>
 
   </article>
