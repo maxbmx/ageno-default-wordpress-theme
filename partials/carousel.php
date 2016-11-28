@@ -28,7 +28,6 @@
   $the_query = new WP_Query( $wp_query_args );
 ?>
 
-
 <div id="<?php echo $carousel_name; ?>" class="carousel slide" data-ride="carousel" data-interval="5000">
 
   <ol class="carousel-indicators">
@@ -40,12 +39,12 @@
           <?php $carousel_indicator_post_no++; ?>
       <?php endwhile; ?>
     <?php endif; ?>
-    <?php wp_reset_postdata(); ?>
+
   </ol>
 
   <div class="carousel-inner" role="listbox">
     <?php
-      $the_query = new WP_Query( $wp_query_args );
+
       while ( $the_query->have_posts() ) :
       $the_query->the_post();
     ?>

@@ -40,7 +40,6 @@
 </nav>
 
 
-
 <?php /*
 Site Title
 ==========
