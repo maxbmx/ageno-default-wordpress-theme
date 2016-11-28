@@ -1,0 +1,27 @@
+.footer-widget-area {
+  padding: $grid-gutter-width-base * 4;
+}
+
+footer#footer {
+  font-family: $font-family-monospace;
+  color: $gray;
+
+  .copy {  font-size: $font-size-xs; margin: 0;}
+  .author {  font-size: $font-size-xs;}
+  .author a { color: $gray-light; }
+  .author { @include content-hover(); }
+
+  .social {
+    text-align: right;
+    font-size: 1em;
+    a {
+      color: $gray;
+      transition: color .6s;
+    }
+    a:hover { color: $gray-light; }
+
+  }
+}
+
+
+

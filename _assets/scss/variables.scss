@@ -1,0 +1,40 @@
+// ## bower_components/font-awesome
+$fa-font-path: "../build/fonts/";
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+//$font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:  Courier, Courier New, monospace;
+
+// ## bower_components/bootstrap
+
+$gray-dark:                 #888 !default;
+$gray:                      #aaa !default;
+$gray-light:                #ccc !default;
+$gray-lighter:              #eee !default;
+$gray-lightest:             #f7f7f9 !default;
+
+$brand-primary:             #0275d8 !default;
+$brand-success:             #5cb85c !default;
+$brand-info:                #5bc0de !default;
+$brand-warning:             #f0ad4e !default;
+$brand-danger:              #d9534f !default;
+$brand-inverse:             $gray-dark !default;
+
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-flex:               false; //set to true
+$enable-rounded:            false;
+$enable-shadows:            false !default;
+$enable-gradients:          false !default;
+$enable-transitions:        false !default;
+$enable-hover-media-query:  false !default;
+$enable-grid-classes:       true !default;
+$enable-print-styles:       true !default;

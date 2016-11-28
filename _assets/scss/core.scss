@@ -1,0 +1,40 @@
+body {
+  background: #f4f4f4;
+  //background: #fff;
+}
+
+.admin-bar {
+
+  html,
+  .navbar-fixed-top {
+    margin-top: 32px;
+  }
+
+  * html body,
+  .navbar-fixed-top {
+    margin-top: 32px;
+  }
+
+  @media screen and ( max-width: 782px ) {
+
+    html,
+    .navbar-fixed-top {
+      margin-top: 46px;
+    }
+
+    * html body,
+    .navbar-fixed-top {
+      margin-top: 46px;
+    }
+
+  }
+
+}
+
+#grad {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-90deg, red, yellow); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, red, yellow); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, red, yellow); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, red, yellow); /* Standard syntax */
+}

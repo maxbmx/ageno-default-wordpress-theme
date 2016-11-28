@@ -1,0 +1,233 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ageno-dwt\n"
+"POT-Creation-Date: 2016-11-27 21:12+0100\n"
+"PO-Revision-Date: 2016-11-27 21:13+0100\n"
+"Last-Translator: Maksymilian Śleziak <maksymilian.sleziak@gmail.com>\n"
+"Language-Team: \n"
+"Language: pl_PL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:4
+msgid "Error 404"
+msgstr "Błąd 404"
+
+#: 404.php:5
+msgid "Ooops, looks like the page you were looking for doesn't seem to exist."
+msgstr "Ups, wygląda na to, że strona której szukasz nie istnieje."
+
+#: content.php:32 partials/single.php:33
+msgid "By"
+msgstr "Przez"
+
+#: content.php:39 partials/single.php:40
+msgid "Continue reading"
+msgstr "Czytaj więcej"
+
+#: content.php:39 partials/single.php:40
+msgid "&hellip; "
+msgstr ""
+
+#: content.php:43 partials/single.php:44
+msgid "Category"
+msgstr "Kategoria"
+
+#: content.php:44 partials/comments.php:19 partials/single.php:45
+msgid "Comments"
+msgstr "Komentarze"
+
+#: content.php:44 partials/comments.php:19 partials/single.php:45
+msgid "None"
+msgstr "Żaden"
+
+#: content.php:52 partials/pagination.php:3 partials/single.php:53
+msgid "Previous"
+msgstr "Poprzerdni"
+
+#: content.php:53 partials/pagination.php:4 partials/single.php:54
+msgid "Next"
+msgstr "Następny"
+
+#: functions/_navbar.php:59
+msgid "Navbar"
+msgstr "Pasek nawigacyjny"
+
+#: functions/feedback.php:28
+msgid "at"
+msgstr "w"
+
+#: functions/feedback.php:30
+msgid "Your comment is awaiting moderation."
+msgstr "Twój komentarz oczekuje na akceptację moderatora."
+
+#: functions/feedback.php:41
+msgid "Edit"
+msgstr "Edytuj"
+
+#: functions/index-pagination.php:17
+msgid "<i class=\"fa fa-angle-left\"></i> Newer"
+msgstr "<i class=\"fa fa-angle-double-left\"></i> Nowsze wpisy"
+
+#: functions/index-pagination.php:18
+msgid "Older <i class=\"fa fa-angle-right\"></i>"
+msgstr "Starsze wpisy <i class=\"fa fa-angle-double-right\"></i>"
+
+#: functions/navbar.php:6
+msgid "Navbar Menu"
+msgstr "Pasek nawigacyjny"
+
+#: functions/navbar.php:7
+msgid "Footer Menu"
+msgstr "Nawigacja w stopce"
+
+#: functions/search-widget.php:5 functions/search-widget.php:6
+msgid "Search"
+msgstr "Szukaj"
+
+#: functions/setup.php:16
+msgid "Read more"
+msgstr "Czytaj więcej"
+
+#: functions/widgets.php:7
+msgid "Sidebar"
+msgstr "Panel boczny"
+
+#: functions/widgets.php:9
+msgid "The sidebar widget area"
+msgstr "Obszar dla widgetów w panelu bocznym"
+
+#: functions/widgets.php:21
+msgid "Footer widget area"
+msgstr "Obszar dla widgetów w stopce"
+
+#: functions/widgets.php:33
+msgid "Post Advert"
+msgstr "Reklama w postach"
+
+#: partials/carousel.php:72 partials/content-single.php:9
+#: partials/content.php:16
+#, fuzzy
+msgid "ago"
+msgstr "temu"
+
+#: partials/comments.php:8
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+"Ten wpis jest chroniony hasłem. Wprowadź hasło, żeby zobaczyć komentarze"
+
+#: partials/comments.php:17
+msgid "Feedback"
+msgstr "Wyślij opinię"
+
+#: partials/comments.php:33
+msgid "Be the first to write a comment."
+msgstr "Bądź pierwszy, który skomentuje ten wpis!"
+
+#: partials/comments.php:35
+msgid "Comments are closed for this post."
+msgstr "Komentarze są wyłączone dla tego postu."
+
+#: partials/comments.php:42
+msgid "Your feedback"
+msgstr ""
+
+#: partials/comments.php:42
+#, php-format
+msgid "Responses to %s"
+msgstr ""
+
+#: partials/comments.php:45
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: partials/comments.php:50
+msgid "Logged in as"
+msgstr ""
+
+#: partials/comments.php:51
+msgid "Log out of this account"
+msgstr ""
+
+#: partials/comments.php:51
+msgid "Log out"
+msgstr ""
+
+#: partials/comments.php:55 partials/comments.php:56
+msgid "Your name"
+msgstr ""
+
+#: partials/comments.php:55
+msgid "(required)"
+msgstr ""
+
+#: partials/comments.php:59 partials/comments.php:60
+msgid "Your email address"
+msgstr ""
+
+#: partials/comments.php:59
+msgid "(required, but will not be published)"
+msgstr ""
+
+#: partials/comments.php:63
+msgid "Your website"
+msgstr ""
+
+#: partials/comments.php:63
+msgid "if you have one (not required)"
+msgstr ""
+
+#: partials/comments.php:64
+msgid "Your website url"
+msgstr ""
+
+#: partials/comments.php:68 partials/comments.php:69
+msgid "Your comment"
+msgstr ""
+
+#: partials/comments.php:71
+msgid "Submit comment"
+msgstr ""
+
+#: partials/content-search.php:17
+msgid "Sorry, your search yielded no results."
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Ageno Default WordPress Theme"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://ageno.pl"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Ageno super simple and minimalistic default wordpress theme."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Maksymilian Sleziak"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://ageno.pl/"
+msgstr ""
+
+#~ msgid "What is that man?"
+#~ msgstr "What is that man?"
+
+#~ msgid "ago2"
+#~ msgstr "temu"
