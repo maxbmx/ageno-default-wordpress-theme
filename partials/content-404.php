@@ -1,3 +1,25 @@
+<?php
+  $carousel_name = 'carousel-ageno';
+  $carousel_indicator_post_no = 0;
+  $carousel_post_no = 0;
+
+  if ( is_category('Home Slider') ) {
+    $category_name = 'Home Slider';
+  } else {
+    $category_name = null;
+  }
+?>
+
+<?php
+  $wp_query_args = array(
+    'category_name' => $category_name,
+    'posts_per_page' => 12
+    );
+  $the_query = new WP_Query( $wp_query_args );
+
+  print_r($the_query->have_posts());
+?>
+
 <div class="row posts">
 
 <?php
@@ -5,7 +27,7 @@
   $post_count = $wp_query->post_count ;
   $randomize = rand(2, $post_count);
 
-  if(have_posts()): while(have_posts()): the_post();?>
+  if($the_query->have_posts()): while($the_query->have_posts()): $the_query->the_post();?>
 
     <div class="col-sm-6 col-md-6 col-lg-3">
       <article id="p-<?php the_ID()?>">
@@ -40,6 +62,5 @@
 
 </div>
 
-<?php get_template_part('partials/pagination'); ?>
+<?php endif; ?>
 
-<?php else: wp_redirect(get_bloginfo('siteurl').'/404', 404); exit; endif; ?>
