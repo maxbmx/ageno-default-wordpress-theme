@@ -59,7 +59,7 @@
         <div class="carousel-caption">
           <header>
             <h2><?php the_title();?></h2>
-            <div class="categories">
+            <div class="meta">
              <?php the_category(' × ') ?>
             </div>
           </header>

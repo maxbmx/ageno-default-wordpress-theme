@@ -21,12 +21,12 @@
     <?php
       wp_nav_menu( array(
         'theme_location' => 'navbar-menu',
-        'menu_class' => 'nav navbar-nav',
-        'container'         => false,
-        'menu' => 'top_menu',
-        'depth' => 3,
-        'container' => false,
-        'menu_class' => 'nav navbar-nav',
+        'menu_class'     => 'nav navbar-nav',
+        'container'      => false,
+        'menu'           => 'top_menu',
+        'depth'          => 3,
+        'container'      => false,
+        'menu_class'     => 'nav navbar-nav',
 
         //Process nav menu using our custom nav walker
         'walker' => new wp_bootstrap_navwalker()

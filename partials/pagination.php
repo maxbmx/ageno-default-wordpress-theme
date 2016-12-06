@@ -4,3 +4,4 @@
   <li class="newer"><?php previous_posts_link(__('Next', 'b4st') . ' <i class="fa fa-arrow-right"></i>') ?></li>
 </ul>
 <?php } ?>
+//todo

@@ -1,40 +1,37 @@
 <div class="row posts">
 
 <?php
-  $i = 1;
+  $i = 0;
   $post_count = $wp_query->post_count ;
   $randomize = rand(2, $post_count);
+  ///echo $randomize;
+  if(have_posts()): while(have_posts()): the_post();
+    $i++;
+  ?>
 
-  if(have_posts()): while(have_posts()): the_post();?>
+  <?php if ( $i <= 2 ) : //added post-advert widget ?>
+
+  <div class="col-sm-6 col-md-6 col-lg-6 two-latest el-<?= $i; ?>">
+    <?php get_template_part('partials/post'); ?>
+  </div>
+
+  <?php else: ?>
+
+  <div class="col-sm-6 col-md-6 col-lg-3 el-<?= $i; ?>">
+    <?php get_template_part('partials/post'); ?>
+  </div>
+
+  <?php endif; ?>
+
+  <?php if (( $randomize == $i) && (is_active_sidebar( 'post-advert' ))) : //added post-advert widget ?>
 
     <div class="col-sm-6 col-md-6 col-lg-3">
-      <article id="p-<?php the_ID()?>">
-        <a href="<?php the_permalink(); ?>">
-          <header>
-            <h2><?php the_title()?></h2>
-            <time datetime="<?php the_time('d-m-Y')?>">
-              <?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) .' '. __('ago', 'ageno-dwt'); ?>
-            </time>
-          </header>
-          <?php the_post_thumbnail('posts-bg'); ?>
-        </a>
+      <article>
+        <?php dynamic_sidebar('post-advert'); ?>
       </article>
     </div>
 
-    <?php
-      $i++;
-      if (( $randomize == $i) && (is_active_sidebar( 'post-advert' ))) :
-    ?>
-
-      <div class="col-sm-6 col-md-6 col-lg-3">
-        <article>
-          <?php dynamic_sidebar('post-advert'); ?>
-        </article>
-      </div>
-
-    <?php
-      endif;
-    ?>
+  <?php endif; ?>
 
 <?php endwhile;  ?>
 

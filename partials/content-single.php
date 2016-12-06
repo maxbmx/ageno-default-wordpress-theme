@@ -17,7 +17,8 @@
   </article>
 </section>
 
-<?php comments_template('/loops/comments.php'); ?>
+<?php comments_template('/partials/comments.php'); ?>
+
 <?php endwhile; else: ?>
   <?php wp_redirect(get_bloginfo('siteurl').'/404', 404); exit; ?>
 <?php endif; ?>

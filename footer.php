@@ -9,7 +9,16 @@
       <p class="author">Theme by <a href="http://ageno.pl">Ageno.pl</a></p>
     </div>
     <div class="col-md-6">
-      <p class="social"><a href=""><i class="fa fa-facebook"></i></a> <a href=""><i class="fa fa-instagram"></i></a></p>
+      <p class="social">
+        <?= ageno_dwt_social(); ?>
+      </p>
+
+
+
+
+
+
+
     </div>
   </div>
 </footer>
