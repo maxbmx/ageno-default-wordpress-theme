@@ -1,3 +1,38 @@
 .navbar-ageno {
   position: absolute;
+
+  .navbar-brand {
+    .logo {
+      display: block;
+      max-width: 10rem;
+      border:1px solid $gray-dark;
+      color: #fff;
+      padding: .5rem 1rem;
+      line-height: 1;
+      border-radius: 3px;
+    }
+
+    display: block;
+
+    float: left;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+
+    font-size: 1.2rem;
+
+    //padding-top: .425rem;
+    //padding-bottom: .425rem;
+
+
+    line-height: inherit;
+
+    img {
+      display: block;
+      max-width: 100px;
+    }
+  }
 }
+
+
