@@ -76,7 +76,7 @@ gulp.task('watchfiles', function () {
 gulp.task('watch', ['css', 'js'], function () {
     livereload.listen();
     gulp.watch(cssFiles, ['css']);
-    //gulp.watch(jsFiles, ['js']);
+    gulp.watch(jsFiles, ['js']);
     //gulp.watch(watchFiles, ['watchfiles', 'css']);
     gulp.watch(watchFiles, ['css']);
 });

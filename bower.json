@@ -19,5 +19,8 @@
     "font-awesome": "^4.7.0",
     "bootstrap": "v4.0.0-alpha.5",
     "ageno-default-typography": "*"
+  },
+  "devDependencies": {
+    "css-hamburgers": "^0.7.0"
   }
 }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html class="no-js">
 <head>
   <title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
@@ -12,16 +12,11 @@
 
 <nav class="navbar navbar-full navbar-fixed-top navbar-dark navbar-ageno">
 
-  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-
-  </button>
-  <div class="collapse navbar-toggleable-xs" id="collapsingNavbar">
-
   <?php
     $logo = get_option('ageno_dwt_theme_logo');
     $logo = sanitize_text_field($logo['ageno_dwt_logo']);
     if (($logo != null) && ($logo != '')):
-      $navbar = '<img src='.$logo.' alt="'.get_bloginfo('name').'">';
+      $navbar = '<img src='.$logo.' class="logo-image" alt="'.get_bloginfo('name').'">';
     else:
       $navbar = '<span class="logo">'.get_bloginfo('name').'</span>';
     endif;
@@ -29,25 +24,30 @@
 
   <a class="navbar-brand" href="<?= home_url('/'); ?>"><?= $navbar; ?></a>
 
-
+  <div class="sidebar closed">
+    <button class="hamburger hamburger--collapse" type="button" aria-label="Menu" aria-controls="navigation">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
     <?php
-      wp_nav_menu( array(
-        'theme_location' => 'navbar-menu',
-        'menu_class'     => 'nav navbar-nav pull-xs-right float-xl-right',
-        'container'      => false,
-        'menu'           => 'top_menu',
-        'depth'          => 3,
-        'container'      => false,
+      if ( has_nav_menu( 'navbar-menu' ) ) {
+        wp_nav_menu( array(
+          'theme_location' => 'navbar-menu',
+          'menu_class'     => 'nav navbar-nav pull-xs-left float-xl-left',
+          'container'      => false,
+          'menu'           => 'top_menu',
+          'depth'          => 3,
+          'container'      => false,
 
-        //Process nav menu using our custom nav walker
-        'walker' => new wp_bootstrap_navwalker()
-        //'container_class' => 'my_extra_menu_class'
-      ) );
+          //Process nav menu using our custom nav walker
+          'walker' => new wp_bootstrap_navwalker()
+          //'container_class' => 'my_extra_menu_class'
+        ) );
+      }
     ?>
-
-    <?php get_template_part('navbar-search'); ?>
-
   </div>
+  <?php get_template_part('navbar-search'); ?>
 </nav>
 
 

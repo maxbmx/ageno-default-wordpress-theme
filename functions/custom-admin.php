@@ -75,11 +75,13 @@ function ageno_dwt_social() {
 
   $social = get_option('ageno_dwt_theme_social');
 
-  foreach ($social as $key => $value) :
-    if ($value != null && $value != '') {
-      $value = sanitize_text_field($value);
-      $value = addhttp( $value );
-      echo '<a href="'.$value.'"><i class="fa fa-'.str_replace('url_','',$key).'"></i></a>';
-    }
-  endforeach;
+  if(!empty($social)) {
+    foreach ($social as $key => $value) :
+      if ($value != null && $value != '') {
+        $value = sanitize_text_field($value);
+        $value = addhttp( $value );
+        echo '<a href="'.$value.'"><i class="fa fa-'.str_replace('url_','',$key).'"></i></a>';
+      }
+    endforeach;
+  }
 }
