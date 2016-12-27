@@ -1,0 +1,26 @@
+{
+  "name": "ageno-dwt",
+  "description": "Simple WordPress Theme",
+  "main": "index.js",
+  "authors": [
+    "Maksymilian Sleziak",
+    "Ageno.pl"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/maxbmx/ageno-dwt",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "bootstrap": "v4.0.0-alpha.5",
+    "ageno-default-typography": "*"
+  },
+  "devDependencies": {
+    "css-hamburgers": "^0.7.0"
+  }
+}

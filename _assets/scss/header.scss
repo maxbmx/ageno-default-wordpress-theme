@@ -1,3 +1,196 @@
 .navbar-ageno {
   position: absolute;
+  font-size: .8rem;
+
+  .sidebar {
+    background: #2f2e3e;
+    color: #fff;
+    position: fixed;
+    transform: translateZ(0);
+    transform: translate(100%, 0);
+    right: 0;
+    left: auto;
+    top: 0;
+    bottom: 0;
+    z-index: 300;
+    transition: .3s transform;
+    width: 280px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .09);
+    transition: .3s transform;
+    //display: flex;
+    //flex-direction: column;
+  }
+
+  .sidebar.is-active {
+    transform: translateZ(0);
+  }
+
+  .search {
+    background: #373648;
+    height: $grid-gutter-width-base *2;
+    position: relative;
+    margin-bottom: $grid-gutter-width-base / 2;
+
+    input {
+      width: 100%;
+      height: $grid-gutter-width-base * 2;
+      padding: 0 $grid-gutter-width-base / 2 0 $grid-gutter-width-base * 2;
+      font-size: 1.2rem;
+      font-family: $font-family-monospace;
+      color: #fff;
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+      outline: none;
+
+      @include placeholder($color: #9797a2);
+    }
+
+    button {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: $grid-gutter-width-base *2;
+      width: $grid-gutter-width-base *2;
+      line-height: $grid-gutter-width-base *2;
+      padding: 0;
+      margin: 0;
+      color: #9797a2;
+      background-color: transparent;
+      border: 0;
+      outline: 0;
+      font-size: 1.3rem;
+      i {
+        margin-top: -5px;
+        display: block;
+      }
+    }
+  }
+
+  .navbar-brand {
+    display: block;
+    float: left;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-right: 1rem;
+    font-size: .8rem;
+
+
+    .logo {
+      font-size: .8rem;
+      max-width: 12rem;
+      border:1px solid $gray-dark;
+      color: #fff;
+      //padding: .25rem 1rem;
+      padding: .5rem 1rem;
+      line-height: 1;
+      border-radius: 3px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .logo-image {
+      //todo
+    }
+
+    //padding-top: .425rem;
+    //padding-bottom: .425rem;
+
+
+    line-height: inherit;
+
+    img {
+      display: block;
+      max-width: 100px;
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      display: block;
+      clear: both;
+      float: none;
+      margin: 0;
+    }
+
+    .nav-item.active {
+      background: $brand-primary;
+    }
+
+    .nav-item a {
+      padding: .5rem $grid-gutter-width-base / 2;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #fff;
+      opacity: .8;
+    }
+
+    .nav-item a:hover {
+      opacity: 1;
+      color: #fff;
+    }
+  }
+
+  .dropdown-menu {
+    position: static;
+    top: inherit;
+    left: inherit;
+    z-index: 1000;
+    padding: 0;
+    color: #fff;
+    font-size: inherit;
+    background-color: #4d4b65;
+    border: none;
+  }
+
+  .dropdown-item  {
+    white-space: normal;
+    margin-left: $grid-gutter-width-base / 4;
+  }
+
+  .dropdown-item:hover {
+    color: #2f2e3e;
+    background-color: #4d4b65;
+  }
 }
+
+
+
+
+.hamburger {
+  position: absolute;
+  top: 0;
+  width: $grid-gutter-width-base * 2;
+  height: $grid-gutter-width-base * 2;
+  padding: 0;
+  display: block;
+  left: - $grid-gutter-width-base * 2;
+  //background: rgba(222,222,222,.5)!important;
+  z-index:222222;
+  &:focus {
+    outline: none;
+  }
+}
+
+$hamburger-padding-x                       : 0; //$grid-gutter-width-base / 2;
+$hamburger-padding-y                       : 0; //$grid-gutter-width-base / 2;
+$hamburger-layer-width                     : $grid-gutter-width-base;
+$hamburger-layer-height                    : 3px;
+$hamburger-layer-spacing                   : $grid-gutter-width-base / 4;
+$hamburger-layer-color                     : #fff;
+$hamburger-layer-border-radius             : 6px;
+$hamburger-hover-opacity                   : 0.7;
+$hamburger-hover-transition-duration       : 0.01s;
+$hamburger-hover-transition-timing-function: linear;
+
+$hamburger-hover-use-filter: false;
+$hamburger-hover-filter    : opacity(50%);
+
+
+
+
+
+
+
+
+

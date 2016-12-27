@@ -17,3 +17,6 @@ The Search Loop
         <i class="fa fa-exclamation-triangle"></i> <?php _e('Sorry, your search yielded no results.', 'b4st'); ?>
     </div>
 <?php endif; ?>
+
+
+

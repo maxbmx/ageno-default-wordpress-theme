@@ -59,7 +59,7 @@
         <div class="carousel-caption">
           <header>
             <h2><?php the_title();?></h2>
-            <div class="categories">
+            <div class="meta">
              <?php the_category(' × ') ?>
             </div>
           </header>
@@ -68,7 +68,7 @@
               <?php echo get_avatar( get_the_author_meta( 'ID' ), 128 ); ?> <?php the_author() ?>
             </div>
             <time datetime="<?php the_time('d-m-Y')?>">
-              <i class="fa fa-clock-o"></i> <?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) .' '. __('ago','ageno-default-wordpress-theme'); ?>
+              <i class="fa fa-clock-o"></i> <?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) .' '. __('ago','ageno-dwt'); ?>
 
 
             </time>

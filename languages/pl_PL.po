@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ageno-dwt\n"
-"POT-Creation-Date: 2016-11-27 21:12+0100\n"
-"PO-Revision-Date: 2016-11-27 21:13+0100\n"
+"POT-Creation-Date: 2016-12-27 01:18+0100\n"
+"PO-Revision-Date: 2016-12-27 01:18+0100\n"
 "Last-Translator: Maksymilian Śleziak <maksymilian.sleziak@gmail.com>\n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -21,49 +21,69 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: 404.php:4
+#: 404.php:5
 msgid "Error 404"
 msgstr "Błąd 404"
 
-#: 404.php:5
+#: 404.php:6
 msgid "Ooops, looks like the page you were looking for doesn't seem to exist."
 msgstr "Ups, wygląda na to, że strona której szukasz nie istnieje."
 
-#: content.php:32 partials/single.php:33
+#: content.php:30 partials/single.php:33
 msgid "By"
 msgstr "Przez"
 
-#: content.php:39 partials/single.php:40
+#: content.php:37 partials/single.php:40
 msgid "Continue reading"
 msgstr "Czytaj więcej"
 
-#: content.php:39 partials/single.php:40
+#: content.php:37 partials/single.php:40
 msgid "&hellip; "
 msgstr ""
 
-#: content.php:43 partials/single.php:44
+#: content.php:41 partials/single.php:44
 msgid "Category"
 msgstr "Kategoria"
 
-#: content.php:44 partials/comments.php:19 partials/single.php:45
+#: content.php:42 partials/single.php:45
 msgid "Comments"
 msgstr "Komentarze"
 
-#: content.php:44 partials/comments.php:19 partials/single.php:45
+#: content.php:42 partials/comments.php:19 partials/single.php:45
 msgid "None"
 msgstr "Żaden"
 
-#: content.php:52 partials/pagination.php:3 partials/single.php:53
+#: content.php:50 partials/pagination.php:3 partials/single.php:53
 msgid "Previous"
-msgstr "Poprzerdni"
+msgstr "Poprzedni"
 
-#: content.php:53 partials/pagination.php:4 partials/single.php:54
+#: content.php:51 partials/pagination.php:4 partials/single.php:54
 msgid "Next"
 msgstr "Następny"
 
 #: functions/_navbar.php:59
 msgid "Navbar"
 msgstr "Pasek nawigacyjny"
+
+#: functions/custom-admin.php:6 functions/custom-admin.php:19
+msgid "Logo"
+msgstr "Logo"
+
+#: functions/custom-admin.php:28
+msgid "Social media"
+msgstr "Media społecznościowe"
+
+#: functions/custom-admin.php:39
+msgid "Facebook"
+msgstr "Facebook"
+
+#: functions/custom-admin.php:51
+msgid "Twitter"
+msgstr "Twitter"
+
+#: functions/custom-admin.php:62
+msgid "Instagram"
+msgstr "Instagram"
 
 #: functions/feedback.php:28
 msgid "at"
@@ -76,14 +96,6 @@ msgstr "Twój komentarz oczekuje na akceptację moderatora."
 #: functions/feedback.php:41
 msgid "Edit"
 msgstr "Edytuj"
-
-#: functions/index-pagination.php:17
-msgid "<i class=\"fa fa-angle-left\"></i> Newer"
-msgstr "<i class=\"fa fa-angle-double-left\"></i> Nowsze wpisy"
-
-#: functions/index-pagination.php:18
-msgid "Older <i class=\"fa fa-angle-right\"></i>"
-msgstr "Starsze wpisy <i class=\"fa fa-angle-double-right\"></i>"
 
 #: functions/navbar.php:6
 msgid "Navbar Menu"
@@ -109,17 +121,11 @@ msgstr "Panel boczny"
 msgid "The sidebar widget area"
 msgstr "Obszar dla widgetów w panelu bocznym"
 
-#: functions/widgets.php:21
-msgid "Footer widget area"
-msgstr "Obszar dla widgetów w stopce"
-
-#: functions/widgets.php:33
+#: functions/widgets.php:32
 msgid "Post Advert"
 msgstr "Reklama w postach"
 
-#: partials/carousel.php:72 partials/content-single.php:9
-#: partials/content.php:16
-#, fuzzy
+#: partials/carousel.php:71 partials/content-single.php:9 partials/post.php:6
 msgid "ago"
 msgstr "temu"
 
@@ -127,10 +133,6 @@ msgstr "temu"
 msgid "This post is password protected. Enter the password to view comments."
 msgstr ""
 "Ten wpis jest chroniony hasłem. Wprowadź hasło, żeby zobaczyć komentarze"
-
-#: partials/comments.php:17
-msgid "Feedback"
-msgstr "Wyślij opinię"
 
 #: partials/comments.php:33
 msgid "Be the first to write a comment."
@@ -140,65 +142,56 @@ msgstr "Bądź pierwszy, który skomentuje ten wpis!"
 msgid "Comments are closed for this post."
 msgstr "Komentarze są wyłączone dla tego postu."
 
-#: partials/comments.php:42
-msgid "Your feedback"
-msgstr ""
-
-#: partials/comments.php:42
-#, php-format
-msgid "Responses to %s"
-msgstr ""
-
-#: partials/comments.php:45
+#: partials/comments.php:44
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr ""
 
-#: partials/comments.php:50
+#: partials/comments.php:49
 msgid "Logged in as"
 msgstr ""
 
-#: partials/comments.php:51
+#: partials/comments.php:50
 msgid "Log out of this account"
 msgstr ""
 
-#: partials/comments.php:51
+#: partials/comments.php:50
 msgid "Log out"
 msgstr ""
 
-#: partials/comments.php:55 partials/comments.php:56
+#: partials/comments.php:54 partials/comments.php:55
 msgid "Your name"
 msgstr ""
 
-#: partials/comments.php:55
+#: partials/comments.php:54
 msgid "(required)"
 msgstr ""
 
-#: partials/comments.php:59 partials/comments.php:60
+#: partials/comments.php:58 partials/comments.php:59
 msgid "Your email address"
 msgstr ""
 
-#: partials/comments.php:59
+#: partials/comments.php:58
 msgid "(required, but will not be published)"
 msgstr ""
 
-#: partials/comments.php:63
+#: partials/comments.php:62
 msgid "Your website"
 msgstr ""
 
-#: partials/comments.php:63
+#: partials/comments.php:62
 msgid "if you have one (not required)"
 msgstr ""
 
-#: partials/comments.php:64
+#: partials/comments.php:63
 msgid "Your website url"
 msgstr ""
 
-#: partials/comments.php:68 partials/comments.php:69
+#: partials/comments.php:67 partials/comments.php:68
 msgid "Your comment"
 msgstr ""
 
-#: partials/comments.php:71
+#: partials/comments.php:70
 msgid "Submit comment"
 msgstr ""
 
@@ -206,8 +199,12 @@ msgstr ""
 msgid "Sorry, your search yielded no results."
 msgstr ""
 
+#: sidebar.php:10
+msgid "Search..."
+msgstr "Szukaj..."
+
 #. Theme Name of the plugin/theme
-msgid "Ageno Default WordPress Theme"
+msgid "Ageno DWT - Default WordPress Theme"
 msgstr ""
 
 #. Theme URI of the plugin/theme
@@ -225,6 +222,28 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "http://ageno.pl/"
 msgstr ""
+
+#~ msgctxt "ageno-dwt"
+#~ msgid "Search..."
+#~ msgstr "Szukaj"
+
+#~ msgid "<i class=\"fa fa-angle-left\"></i> Newer"
+#~ msgstr "<i class=\"fa fa-angle-double-left\"></i> Nowsze wpisy"
+
+#~ msgid "Older <i class=\"fa fa-angle-right\"></i>"
+#~ msgstr "Starsze wpisy <i class=\"fa fa-angle-double-right\"></i>"
+
+#~ msgid "Footer widget area"
+#~ msgstr "Obszar dla widgetów w stopce"
+
+#~ msgid "Theme settings"
+#~ msgstr "Ustawienia szablonu"
+
+#~ msgid "Ageno Default WordPress Theme settings"
+#~ msgstr "Ageno Default WordPress Theme ustawienia"
+
+#~ msgid "Feedback"
+#~ msgstr "Wyślij opinię"
 
 #~ msgid "What is that man?"
 #~ msgstr "What is that man?"

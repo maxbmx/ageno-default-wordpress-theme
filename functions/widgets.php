@@ -15,7 +15,6 @@
 
   /*
   Footer (footer widget areas)
-   */
 
   register_sidebar( array(
     'name'          => __( 'Footer widget area', 'ageno-dwt' ),
@@ -27,7 +26,7 @@
     'before_title'  => '<h2 class="widgettitle">',
     'after_title'   => '</h2>'
   ) );
-
+  */
 
   register_sidebar( array(
     'name'          => __( 'Post Advert', 'ageno-dwt' ),

@@ -2,13 +2,15 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin-ext');
 @import "bower_components/bootstrap/scss/bootstrap";
 @import "bower_components/font-awesome/scss/font-awesome";
-@import "bower_components/ageno-default-typography/sass/main.scss";
+@import "bower_components/ageno-default-typography/sass/main";
 @import "mixins";
 @import "header";
 @import "carousel";
 @import "core";
 @import "post";
+@import "pagination";
 @import "post-header";
 @import "footer";
 @import "single";
 //@import "page";
+@import "bower_components/css-hamburgers/_sass/hamburgers/hamburgers";

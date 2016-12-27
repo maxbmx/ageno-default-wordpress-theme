@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html class="no-js">
 <head>
   <title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
@@ -12,31 +12,19 @@
 
 <nav class="navbar navbar-full navbar-fixed-top navbar-dark navbar-ageno">
 
-  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+  <?php
+    $logo = get_option('ageno_dwt_theme_logo');
+    $logo = sanitize_text_field($logo['ageno_dwt_logo']);
+    if (($logo != null) && ($logo != '')):
+      $navbar = '<img src='.$logo.' class="logo-image" alt="'.get_bloginfo('name').'">';
+    else:
+      $navbar = '<span class="logo">'.get_bloginfo('name').'</span>';
+    endif;
+  ?>
 
-  </button>
-  <div class="collapse navbar-toggleable-xs" id="collapsingNavbar">
-    <a class="navbar-brand" href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a>
+  <a class="navbar-brand" href="<?= home_url('/'); ?>"><?= $navbar; ?></a>
 
-    <?php
-      wp_nav_menu( array(
-        'theme_location' => 'navbar-menu',
-        'menu_class' => 'nav navbar-nav',
-        'container'         => false,
-        'menu' => 'top_menu',
-        'depth' => 3,
-        'container' => false,
-        'menu_class' => 'nav navbar-nav',
-
-        //Process nav menu using our custom nav walker
-        'walker' => new wp_bootstrap_navwalker()
-        //'container_class' => 'my_extra_menu_class'
-      ) );
-    ?>
-
-    <?php get_template_part('navbar-search'); ?>
-
-  </div>
+  <?php get_template_part('sidebar'); ?>
 </nav>
 
 

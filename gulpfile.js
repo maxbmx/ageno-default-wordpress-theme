@@ -8,6 +8,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var cleancss = require('gulp-clean-css');
 var plumber = require('gulp-plumber');
 var gulpSequence = require('gulp-sequence');
+var size = require('gulp-size');
 
 var env = process.env.GULP_ENV;
 
@@ -43,6 +44,7 @@ gulp.task('css', function () {
     .pipe(cleancss())
     .pipe(concat('style.min.css'))
     .pipe(sourcemaps.write())
+    .pipe(size())
     .pipe(gulp.dest('build/'))
     .pipe(livereload());
 });
@@ -74,7 +76,7 @@ gulp.task('watchfiles', function () {
 gulp.task('watch', ['css', 'js'], function () {
     livereload.listen();
     gulp.watch(cssFiles, ['css']);
-    //gulp.watch(jsFiles, ['js']);
+    gulp.watch(jsFiles, ['js']);
     //gulp.watch(watchFiles, ['watchfiles', 'css']);
     gulp.watch(watchFiles, ['css']);
 });

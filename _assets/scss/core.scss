@@ -11,14 +11,16 @@ body {
   }
 
   * html body,
-  .navbar-fixed-top {
+  .navbar-fixed-top,
+  .sidebar {
     margin-top: 32px;
   }
 
   @media screen and ( max-width: 782px ) {
 
     html,
-    .navbar-fixed-top {
+    .navbar-fixed-top,
+    .sidebar {
       margin-top: 46px;
     }
 
