@@ -1,7 +1,6 @@
-<?php if ( function_exists('b4st_pagination') ) { b4st_pagination(); } else if ( is_paged() ) { ?>
+<?php if (show_posts_nav()) : ?>
 <ul class="pagination">
-  <li class="older"><?php next_posts_link('<i class="fa fa-arrow-left"></i> ' . __('Previous', 'b4st')) ?></li>
-  <li class="newer"><?php previous_posts_link(__('Next', 'b4st') . ' <i class="fa fa-arrow-right"></i>') ?></li>
+  <li class="page-link pull-left"><?php next_posts_link('<i class="fa fa-arrow-left"></i> ' . __('Previous', 'ageno-dwt')) ?></li>
+  <li class="page-link pull-right"><?php previous_posts_link(__('Next', 'ageno-dwt') . ' <i class="fa fa-arrow-right"></i>') ?></li>
 </ul>
-<?php } ?>
-//todo
+<?php endif; ?>

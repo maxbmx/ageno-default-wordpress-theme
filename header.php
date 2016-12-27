@@ -24,30 +24,7 @@
 
   <a class="navbar-brand" href="<?= home_url('/'); ?>"><?= $navbar; ?></a>
 
-  <div class="sidebar closed">
-    <button class="hamburger hamburger--collapse" type="button" aria-label="Menu" aria-controls="navigation">
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
-    <?php
-      if ( has_nav_menu( 'navbar-menu' ) ) {
-        wp_nav_menu( array(
-          'theme_location' => 'navbar-menu',
-          'menu_class'     => 'nav navbar-nav pull-xs-left float-xl-left',
-          'container'      => false,
-          'menu'           => 'top_menu',
-          'depth'          => 3,
-          'container'      => false,
-
-          //Process nav menu using our custom nav walker
-          'walker' => new wp_bootstrap_navwalker()
-          //'container_class' => 'my_extra_menu_class'
-        ) );
-      }
-    ?>
-  </div>
-  <?php get_template_part('navbar-search'); ?>
+  <?php get_template_part('sidebar'); ?>
 </nav>
 
 

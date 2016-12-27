@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ageno-dwt\n"
-"POT-Creation-Date: 2016-12-06 01:54+0100\n"
-"PO-Revision-Date: 2016-12-06 01:54+0100\n"
+"POT-Creation-Date: 2016-12-27 01:18+0100\n"
+"PO-Revision-Date: 2016-12-27 01:18+0100\n"
 "Last-Translator: Maksymilian Śleziak <maksymilian.sleziak@gmail.com>\n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -55,7 +55,7 @@ msgstr "Żaden"
 
 #: content.php:50 partials/pagination.php:3 partials/single.php:53
 msgid "Previous"
-msgstr "Poprzerdni"
+msgstr "Poprzedni"
 
 #: content.php:51 partials/pagination.php:4 partials/single.php:54
 msgid "Next"
@@ -97,14 +97,6 @@ msgstr "Twój komentarz oczekuje na akceptację moderatora."
 msgid "Edit"
 msgstr "Edytuj"
 
-#: functions/index-pagination.php:17
-msgid "<i class=\"fa fa-angle-left\"></i> Newer"
-msgstr "<i class=\"fa fa-angle-double-left\"></i> Nowsze wpisy"
-
-#: functions/index-pagination.php:18
-msgid "Older <i class=\"fa fa-angle-right\"></i>"
-msgstr "Starsze wpisy <i class=\"fa fa-angle-double-right\"></i>"
-
 #: functions/navbar.php:6
 msgid "Navbar Menu"
 msgstr "Pasek nawigacyjny"
@@ -129,16 +121,11 @@ msgstr "Panel boczny"
 msgid "The sidebar widget area"
 msgstr "Obszar dla widgetów w panelu bocznym"
 
-#: functions/widgets.php:21
-msgid "Footer widget area"
-msgstr "Obszar dla widgetów w stopce"
-
-#: functions/widgets.php:33
+#: functions/widgets.php:32
 msgid "Post Advert"
 msgstr "Reklama w postach"
 
 #: partials/carousel.php:71 partials/content-single.php:9 partials/post.php:6
-#, fuzzy
 msgid "ago"
 msgstr "temu"
 
@@ -212,8 +199,12 @@ msgstr ""
 msgid "Sorry, your search yielded no results."
 msgstr ""
 
+#: sidebar.php:10
+msgid "Search..."
+msgstr "Szukaj..."
+
 #. Theme Name of the plugin/theme
-msgid "Ageno Default WordPress Theme"
+msgid "Ageno DWT - Default WordPress Theme"
 msgstr ""
 
 #. Theme URI of the plugin/theme
@@ -231,6 +222,19 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "http://ageno.pl/"
 msgstr ""
+
+#~ msgctxt "ageno-dwt"
+#~ msgid "Search..."
+#~ msgstr "Szukaj"
+
+#~ msgid "<i class=\"fa fa-angle-left\"></i> Newer"
+#~ msgstr "<i class=\"fa fa-angle-double-left\"></i> Nowsze wpisy"
+
+#~ msgid "Older <i class=\"fa fa-angle-right\"></i>"
+#~ msgstr "Starsze wpisy <i class=\"fa fa-angle-double-right\"></i>"
+
+#~ msgid "Footer widget area"
+#~ msgstr "Obszar dla widgetów w stopce"
 
 #~ msgid "Theme settings"
 #~ msgstr "Ustawienia szablonu"

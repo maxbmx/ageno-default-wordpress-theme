@@ -10,7 +10,7 @@
   }
 }
 
-@mixin darken-image($z-index: 2, $color: .4){
+@mixin darken-image($z-index: 2, $color: .4) {
   &:after {
     display: block;
     width: 100%;
@@ -26,3 +26,11 @@
     transition: background .2s ease-in-out;
   }
 }
+
+@mixin placeholder ($color: inherit) {
+  &::-webkit-input-placeholder {color: $color;}
+  &:-moz-placeholder           {color: $color;}
+  &::-moz-placeholder          {color: $color;}
+  &:-ms-input-placeholder      {color: $color;}
+}
+
