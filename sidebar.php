@@ -12,7 +12,6 @@
     </form>
   </div>
 
-
   <?php
     if ( has_nav_menu( 'navbar-menu' ) ) {
       wp_nav_menu( array(

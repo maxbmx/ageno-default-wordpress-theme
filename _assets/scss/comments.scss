@@ -1,0 +1,106 @@
+.comment-list {
+  list-style: none;
+  padding: 0;
+
+  .comment {
+    margin: $grid-gutter-width-base * 2 0;
+    border-top: 2px solid $gray-lighter;
+  }
+
+  .child-comments {
+    margin: $grid-gutter-width-base 0 $grid-gutter-width-base $grid-gutter-width-base * 2;
+  }
+
+  .comment-meta {
+    clear: both;
+    overflow: hidden;
+    line-height: $grid-gutter-width-base;
+    height: $grid-gutter-width-base;
+    font-size: .875rem;
+    color: $gray;
+    overflow: hidden;
+    font-family: $font-family-monospace;
+    margin: $grid-gutter-width-base / 2 0;
+
+    .gravatar {
+      margin: 0;
+      float: left;
+      margin-right: $grid-gutter-width-base / 4;
+
+      img {
+        display: block;
+        border-radius: 50%;
+        width:  $grid-gutter-width-base;
+        height:  $grid-gutter-width-base;
+      }
+    }
+
+    .comment-author{
+      font-family: $font-family-sans-serif;
+      float: left;
+      display: block;
+      color: $gray-dark;
+      margin-right: $grid-gutter-width-base / 4;
+      text-transform: uppercase;
+      font-weight: bold;
+      &:hover { text-decoration: none; }
+    }
+
+    .comment-author::first-letter {
+      text-transform: uppercase;
+    }
+
+    .comment-reply-link {
+      float: left;
+      display: block;
+      color: $gray;
+      margin-right: $grid-gutter-width-base / 4;
+      &:hover { text-decoration: none; }
+    }
+
+    .comment-reply-link {
+      color: $gray-lighter;
+      &:hover { color: $gray-light; }
+    }
+
+    time {
+      float: right;
+      display: block;
+      margin-right: $grid-gutter-width-base / 2;
+      i {
+        //color: $gray-lighter;
+        margin-right: $grid-gutter-width-base /   4;
+      }
+      a { color: inherit; color: $gray-light;}
+      a:hover { text-decoration: none; }
+    }
+
+    .comment-meta-item {
+      clear: both;
+    }
+
+    .comment-edit-link {
+      color: $gray-light;
+      float: left;
+      display: none;
+    }
+
+    .comment:hover .comment-edit-link { display: block; }
+
+
+
+    .fn { font-weight: normal; }
+    .says { display: none; }
+  }
+
+  .comment-author {
+    float: left;
+  }
+
+  time {}
+
+
+
+
+
+}
