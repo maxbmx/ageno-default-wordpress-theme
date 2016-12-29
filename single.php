@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
   <section class="post-header">
     <div class="caption">
       <h1><?php the_title();?></h1>

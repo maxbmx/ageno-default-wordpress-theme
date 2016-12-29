@@ -12,6 +12,7 @@ require_once locate_template('/functions/enqueues.php');
 require_once locate_template('/functions/wp_bootstrap_navwalker.php');
 require_once locate_template('/functions/navbar.php');
 require_once locate_template('/functions/widgets.php');
+require_once locate_template('/functions/comments.php');
 
 //require_once locate_template('/functions/search-widget.php');
 require_once locate_template('/functions/index-pagination.php');

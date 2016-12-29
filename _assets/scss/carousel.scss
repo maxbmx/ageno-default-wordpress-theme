@@ -4,10 +4,48 @@
 }
 
 .carousel-indicators {
-  opacity: .8;
-  bottom:0;
+  bottom: 0;
   margin-bottom: 0;
   line-height: $spacer * 4;
+
+  li {
+    width: 50px;
+    height: 22px;
+    margin: 0 5px;
+    padding: 0;
+    border: none;
+    border-radius: 0px;
+    background-color: transparent;
+    border: none;
+    position: relative;
+
+    &:after {
+      content: "";
+      background-color: #fff;
+      bottom: 10px;
+      display: block;
+      height: 2px;
+      opacity: .3;
+      position: absolute;
+      right: 0;
+      //transform: scaleX(0);
+      transition: opacity .3s ease 0s;
+      width: 100%;
+    }
+
+    &.active {
+      background-color: transparent;
+      margin: 0 5px;
+      height: 22px;
+      width: 50px;
+      border: none;
+    }
+
+    &.active:after {
+      background-color: #fff;
+      opacity: 1;
+    }
+  }
 }
 
 .carousel-item {
